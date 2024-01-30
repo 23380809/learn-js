@@ -4,6 +4,7 @@ window.onload = function() {
 }
 
 function enter(event) {
+    console.log(event.key)
     if(event.key === 'Enter') {
         document.getElementById('myBtn').click();
     }
