@@ -5,6 +5,14 @@ class PStack {
     this._persons = [];
   }
 
+  get persons() {
+    return this._persons
+  }
+
+  set persons(persons) {
+    this._persons = persons
+  }
+
   showId() {
     return this.#id;
   }
@@ -27,7 +35,8 @@ class PStackImpl extends PStack {
 
 let pstack = new PStackImpl();
 pstack.persons = [{name: 'Jojo', age: 21}, {name: 'Gabi', age: 29}]
+
 pstack.push({name: 'Dein', age: 19});
-console.log(pstack.pop());
-console.log(pstack.pop());
+// console.log(pstack.pop());
+// console.log(pstack.pop());
 console.log(pstack.persons);
